@@ -1,0 +1,45 @@
+音楽を再生します[l][r]
+[playbgm storage=test.mp3]
+音楽が再生されましたね[l][r]
+次に音楽を停止します[l][r]
+[stopbgm]
+音楽の再生が止まりました[l][r]
+
+;[BGM：なし]
+[stopbgm]
+
+
+;フェードイン再生開始　3000ミリ秒（３秒）かけて徐々に再生されます[l][r]
+[fadeinbgm time="3000" storage=music.mp3 loop=true]
+
+音楽をクロスフェードさせます[l][r]
+
+;現在再生されている音楽からtest2.mp3へ5000ミリ秒（５秒）かけてクロスフェードさせる[l][r]
+[xchgbgm storage=test2.mp3 time=5000]
+
+音楽をフェードアウト停止させます[l][r]
+[fadeoutbgm time=5000]
+
+
+;効果音を再生します
+[playse storage="voice.mp3"]
+再生されましたね[l][r]
+
+
+;[背景：black]
+[back storage=black.jpg time=3000]
+
+;メッセージレイヤの透明度を変更透明へ（デフォは128）
+[position opacity=0]
+
+;メッセージレイヤの透明度を元に戻す
+[position opacity=128]
+#
+#藍沢未稀
+#西尾七海
+[chararemove layer=0]
+[charaset layer=0 left=240 top=0 time= 1 storage = nanami_ikari.png] 
+
+[chara_ptext name="nanami" face="ikari"]
+
+
